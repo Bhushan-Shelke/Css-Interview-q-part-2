@@ -130,3 +130,34 @@
     flex-direction: row;
     display: flex;
 }
+.transition{
+    width: 200px;
+    height: 200px;
+    background-color: aquamarine;
+    transition: all;
+    transition-duration: 3s;
+}
+.transition:hover{
+    transform: rotate(360deg);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: radial-gradient(red 25%,
+    blue 25%,pink 50%);
+    box-sizing: border-box;
+    padding: 90px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    width: 600px;
+    height: 600px;
+    position: relative;
+}
+.childdd{
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    background-color: rgb(76, 129, 172);
+}
